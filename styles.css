@@ -1,7 +1,31 @@
+
+@import url('https://rsms.me/inter/inter.css');
+html { 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    : 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 body {
     margin: 0 !important;
     padding: 0 !important;
-    font-family: "Segoe UI";
     scroll-behavior: smooth;
 }
 

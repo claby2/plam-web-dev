@@ -1,0 +1,283 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Segoe UI";
+    scroll-behavior: smooth;
+}
+
+#background {
+    background-color: #FF8C42;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* ---Landing Page--- */
+.header {
+    align-items: center;
+    color: #FBFBFB;
+    margin-bottom: 3vh;
+}
+
+.header-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+.header-text h1 {
+    font-weight: 700;
+    font-size: 4em;
+    position: relative;
+    margin: 0 auto;
+    animation: fadein 0.2s linear 1 normal forwards;
+}
+
+
+.header-text p {
+    font-weight: 400;
+    font-size: 1em;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 0.5s steps(40,end)
+}
+
+.scroll-down {
+    font-weight: 200;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    bottom: 3vh;
+    font-size: 15px;
+    letter-spacing: 1px;
+    animation: fadein 0.2s linear 1 normal forwards;
+    animation: MoveUpDown 1s linear infinite;
+}
+
+/* ---Hamburger & Navs--- */
+
+.hamburger {
+    z-index: 2;
+    position: absolute;
+    background-color:#FBFBFB;
+    height:40px;
+    width:40px;
+    float:right;
+    opacity: 0.5;
+    transition: 0.15s;
+    margin: 1vh 0 0 1vh;
+}
+
+.hamburger:hover {
+    opacity: 1;
+}
+
+.navbar {
+    user-select: none;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    background-color: rgba(33,33,33,0.5);
+    opacity: 1;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    transition: 0.3s;
+}
+
+.navbar-elem {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 5vh 0 0 5vw;
+}
+
+.navbar h2 {
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 1.3em;
+    margin-bottom: 1vh;
+}
+
+.navbar a:hover {
+    background-color: rgba(33,33,33,0.8)
+}
+
+/*---General Section---*/
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align:center;
+    left: 0;
+    right: 0;
+    height: auto;
+    margin: 0 25vw 3vh 25vw;
+    cursor: default;
+    padding-bottom: 1vh;
+}
+
+.section h2{
+    font-weight: 400;
+    color: #212121;
+    font-size: 2em;
+
+}
+
+.section p{
+    font-weight: 300;
+    color: #212121;
+    font-size: 1em;
+}
+
+.section ul {
+    list-style: none;
+}
+
+/* ---Past Work Display--- */
+
+.work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align:center;
+    left: 0;
+    right: 0;
+    height: auto;
+    margin: 0 25vw 3vh 25vw;
+    cursor: default;
+    padding-bottom: 1vh;
+}
+
+.work-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    text-align:center;
+}
+
+.work {
+    height: 10vw;
+    width: 10vw;
+    background-color: #FBFBFB;
+    transition: 0.2s;
+}
+
+.work:hover {
+    filter: brightness(50%);
+}
+
+.work img {
+    height: 10vw;
+    width: 10vw;
+    object-fit: cover;
+}
+
+/* ---Client Review--- */
+.client-reviews-list {
+    text-align: justify;
+    align-items: left;
+    justify-content: left;
+}
+
+.client-reviews-list h4 { /* Actual Review */
+    font-weight: 400;
+    font-style: italic;
+}
+
+.client-reviews-list p {
+    margin-bottom: 7vh;
+}
+
+/* ---Detail--- */
+.white {
+    background-color: #FFFFFF;
+}
+
+.alt {
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+/* ---Animation--- */
+@keyframes typing {
+    from { width: 0}
+    to { width: 100% }
+}
+
+@keyframes fadein{
+    from{
+       opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 3.5vh;
+    }
+    50% {
+        bottom: 3vh;
+    }
+}
+
+/* ---Resize Support--- */
+
+@media only screen and (max-width: 800px) {
+
+    .work {
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .work img {
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .work-section {
+        margin: 0 5vw 3vh 5vw;
+    }
+
+    .client-reviews-list {
+        text-align: center;
+
+    }
+
+}

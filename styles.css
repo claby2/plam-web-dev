@@ -1,24 +1,6 @@
 
 @import url('https://rsms.me/inter/inter.css');
-html { 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    : 'Inter', sans-serif; }
+html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
@@ -160,26 +142,8 @@ body {
     left: 0;
     right: 0;
     height: auto;
-    margin: 0 25vw 3vh 25vw;
+    padding: 0 25vw 3vh 25vw;
     cursor: default;
-    padding-bottom: 1vh;
-}
-
-.section h2{
-    font-weight: 400;
-    color: #212121;
-    font-size: 2em;
-
-}
-
-.section p{
-    font-weight: 300;
-    color: #212121;
-    font-size: 1em;
-}
-
-.section ul {
-    list-style: none;
 }
 
 /* ---Past Work Display--- */
@@ -193,7 +157,7 @@ body {
     left: 0;
     right: 0;
     height: auto;
-    margin: 0 25vw 3vh 25vw;
+    margin: 0 25vw 8vh 25vw;
     cursor: default;
     padding-bottom: 1vh;
 }
@@ -210,17 +174,18 @@ body {
     height: 10vw;
     width: 10vw;
     background-color: #FBFBFB;
-    transition: 0.2s;
-}
-
-.work:hover {
-    filter: brightness(50%);
 }
 
 .work img {
     height: 10vw;
     width: 10vw;
     object-fit: cover;
+    transition: 0.2s;
+    filter: brightness(60%);
+}
+
+.work img:hover {
+    filter: brightness(100%);
 }
 
 /* ---Client Review--- */
@@ -242,7 +207,29 @@ body {
 /* ---Detail--- */
 .white {
     background-color: #FFFFFF;
+    color: #212121;
 }
+
+.orange {
+    background-color: #FF8C42;
+    color: #FBFBFA;
+}
+
+.white h2, .orange h2{
+    font-weight: 500;
+    font-size: 2em;
+
+}
+
+.white p, .orange p{
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.white ul, .orange ul {
+    list-style: none;
+}
+
 
 .alt {
     opacity: 1;
@@ -255,6 +242,15 @@ body {
 
 .no-margin-bottom {
     margin-bottom: 0;
+}
+
+.slogan {
+    margin: 20vh 0 20vh 0;
+}
+
+.rounded {
+    border-top-right-radius: 50% 10%;
+    border-top-left-radius: 50% 10%;
 }
 
 /* ---Animation--- */

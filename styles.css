@@ -12,7 +12,7 @@ body {
 }
 
 #background {
-    background-color: #FF8C42;
+    background-color: #EAE7DC;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -27,7 +27,7 @@ body {
 /* ---Landing Page--- */
 .header {
     align-items: center;
-    color: #FBFBFB;
+    color: #E85A4F;
     margin-bottom: 3vh;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .scroll-down {
-    font-weight: 200;
+    font-weight: 300;
     position: absolute;
     bottom: 30px;
     left: 0;
@@ -75,7 +75,7 @@ body {
 .hamburger {
     z-index: 2;
     position: absolute;
-    background-color:#FBFBFB;
+    background-color:#E98074;
     height:40px;
     width:40px;
     float:right;
@@ -146,6 +146,11 @@ body {
     cursor: default;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
 /* ---Past Work Display--- */
 
 .work-section {
@@ -207,27 +212,33 @@ body {
 /* ---Detail--- */
 .white {
     background-color: #FFFFFF;
-    color: #212121;
+    color: #8E8D8A;
 }
 
-.orange {
-    background-color: #FF8C42;
-    color: #FBFBFA;
+.maincolor {
+    background-color: #EAE7DC;
+    color: #4E4D4A;
 }
 
-.white h2, .orange h2{
+.white h2, .maincolor h2{
     font-weight: 500;
     font-size: 2em;
+    color: #4E4D4A;
 
 }
 
-.white p, .orange p{
+.white p, .maincolor p{
     font-weight: 400;
     font-size: 1em;
 }
 
-.white ul, .orange ul {
+.white ul, .maincolor ul {
     list-style: none;
+}
+
+.white h3, .maincolor h3 {
+    font-weight: 300;
+    font-size: 1.5em;
 }
 
 
